@@ -1,0 +1,9 @@
+./*cache*/
+allurectl*
+*.log
+*.pyc
+.idea/
+allure-results/
+**/Pipfile
+**/runtests.sh
+.vscode/
