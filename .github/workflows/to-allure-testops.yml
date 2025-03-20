@@ -7,7 +7,7 @@ on:
       TEST_ENDPOINT:
         description: "Endpoint for tests"
         required: true
-        default: https://testing.qatools.cloud
+        default: https://qaq.oka.qu.qu.qu
       TEST_BROWSER:
         description: "Browser used for tests"
         required: true
