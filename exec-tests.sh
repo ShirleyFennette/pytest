@@ -1,5 +1,5 @@
-export ALLURE_TOKEN=$(cat ../secrets/xyz-token.txt)
-export ALLURE_ENDPOINT=$(cat ../secrets/xyz-endpoint.txt)
+export ALLURE_TOKEN=67aad6fa-966a-49ef-a598-e572b3e030f9
+export ALLURE_ENDPOINT=https://testing.qatools.cloud/
 export ALLURE_PROJECT_ID=1
 export ALLURE_LAUNCH_NAME="checking various attachments"
 export ALLURE_RESULTS=allure-results
