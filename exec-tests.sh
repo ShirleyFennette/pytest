@@ -5,3 +5,4 @@ export ALLURE_LAUNCH_NAME="checking various attachments"
 export ALLURE_RESULTS=allure-results
 
 ./allurectl watch -- pytest ./tests --alluredir=${ALLURE_RESULTS}
+--endpoint http://testing.qatools.cloud
