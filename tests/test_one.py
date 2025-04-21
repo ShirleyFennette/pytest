@@ -8,7 +8,7 @@ def test_passing():
     with allure.step("Assert 123 versus 123"):
         assert (1, 2, 3) == (1, 2, 3)
 
-@allure.suite("First steps")
+@allure.suite("<b>First</b> steps")
 @allure.story("smoking pytest")
 @allure.feature("strings assertions")
 @allure.title("Assert two identical strings")
