@@ -1,6 +1,6 @@
 import allure
 
-@allure.feature("Answering questions")
+@allure.feature("src/v3/abirvalg@")
 @allure.story("Answering questionable questions")
 @allure.title("Do stuff and then assert dammit")
 def test_json_attach():
