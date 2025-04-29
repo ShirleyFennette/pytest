@@ -3,6 +3,7 @@ import allure
 @allure.feature("src/v3/abirvalg@")
 @allure.story("Answering questionable questions")
 @allure.title("Do stuff and then assert dammit")
+@allure.issue("AL-3")
 def test_json_attach():
     with allure.step("define stuff"):
         pass
