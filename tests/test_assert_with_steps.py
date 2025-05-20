@@ -4,6 +4,7 @@ import allure
 @allure.story("Answering questionable questions")
 @allure.title("Do stuff and then assert dammit")
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
+@allure.label("jira","AK-1")
 def test_json_attach():
     with allure.step("define stuff"):
         pass
