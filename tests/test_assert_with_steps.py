@@ -7,7 +7,7 @@ import allure
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
 @allure.label("jira","AK-1")
 def test_json_attach():
-    with allure.step("define st1"):
+    with allure.step("define st1ff"):
         pass
     with allure.step("define stuff"):
         pass
