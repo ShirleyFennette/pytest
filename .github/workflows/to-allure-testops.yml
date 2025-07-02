@@ -24,34 +24,30 @@ env:
 
 jobs:
   all-tests:
-    runs-on: windows-latest  # NUnit обычно используется в .NET среде, поэтому Windows runner
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+      - uses: actions/setup-python@v4
         with:
-          dotnet-version: '6.0.x'  # или актуальная версия .NET
-
+          python-version: '3.11'
       - name: Install dependencies
-        run: dotnet restore
-
+        run: |
+          python -m pip install --upgrade pip
+          pip install allure-pytest pytest
       - name: install and configure allurectl
         uses: allure-framework/setup-allurectl@v1
         with:
           allure-endpoint: ${{ secrets.ALLURE_ENDPOINT }}
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: ${{ secrets.ALLURE_PROJECT_ID }}
-
-      - name: Run NUnit tests
+      - name: Run pytest tests
         run: |
-          dotnet test --logger:"trx;LogFileName=testresults.trx" --results-directory:./TestResults
-          # Конвертация результатов TRX в Allure (может потребоваться дополнительный инструмент)
-          # Например, используя Allure.TrxLogger или аналогичный конвертер
-          allurectl watch -- allure generate ./TestResults -o ${ALLURE_RESULTS}
+          chmod +x exec-tests.sh
+          allurectl watch -- pytest ./tests --alluredir=${ALLURE_RESULTS} --capture=no
         env:
           TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
           TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
           ALLURE_TESTPLAN_PATH: "./testplan.json"
           ALLURE_RESULTS: "allure-results"
+
       
