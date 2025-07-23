@@ -6,6 +6,7 @@ import allure
 @allure.title("Do stuff and then assert dammit")
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
 @allure.label("jira","AK-1")
+@allure.testcase("60069")
 def test_json_attach():
     with allure.step("define st1ff"):
         pass
