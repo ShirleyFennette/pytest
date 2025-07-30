@@ -1,4 +1,5 @@
 import allure
+import pytest
 
 @allure.id("63337")
 @pytest.mark.example
