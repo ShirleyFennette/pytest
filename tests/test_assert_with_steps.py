@@ -1,6 +1,7 @@
 import allure
 
 @allure.id("63337")
+@pytest.mark.example
 @allure.feature("src/v3/abirvalg@")
 @allure.story("Answering questionable questions")
 @allure.title("Do stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammit")
