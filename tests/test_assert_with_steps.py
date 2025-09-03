@@ -14,6 +14,8 @@ def test_json_attach():
         pass
     with allure.step("define stuff"):
         pass
+    with allure.step("defile them"):
+        pass
     with allure.step("do stuff"):
         pass
     with allure.step("do more stuff"):
