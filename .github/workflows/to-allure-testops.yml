@@ -40,6 +40,7 @@ jobs:
           allure-endpoint: ${{ secrets.ALLURE_ENDPOINT }}
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: ${{ secrets.ALLURE_PROJECT_ID }}
+          allure-launch-tags: ${{ secrets.ALLURE_LAUNCH_TAGS }}
       - name: Run pytest tests
         run: |
           chmod +x exec-tests.sh
