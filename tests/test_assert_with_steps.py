@@ -3,7 +3,7 @@ import pytest
 
 @allure.id("71364")
 @pytest.mark.example
-@allure.feature("src/v3/abirvalg@")
+@allure.feature("src/v3/abirvalg")
 @allure.story("Answering questionable questions")
 @allure.title("Do stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammit")
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
