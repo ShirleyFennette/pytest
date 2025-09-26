@@ -5,6 +5,6 @@ export ALLURE_LAUNCH_NAME="checking various attachments"
 export ALLURE_RESULTS=allure-results
 export ALLURE_LAUNCH_ID=7087
 
-./allurectl launch reopen 7087 watch -- pytest ./tests --alluredir=${ALLURE_RESULTS} --tags "reopened"
+./allurectl launch reopen 7087 watch -- pytest ./tests --alluredir=${ALLURE_RESULTS}
 --endpoint http://testing.qatools.cloud
 --token 67aad6fa-966a-49ef-a598-e572b3e030f9
