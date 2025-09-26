@@ -6,6 +6,7 @@ import pytest
 @allure.feature("src/v3/abirvalg")
 @allure.tag("Привет")
 @allure.story("Answering questionable questions")
+@allure.description("""wtf?""")
 @allure.title("Do stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammit")
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
 @allure.label("jira","AK-1")
