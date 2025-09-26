@@ -22,7 +22,7 @@ env:
   ALLURE_PROJECT_ID: 1605
   ALLURE_TOKEN: 67aad6fa-966a-49ef-a598-e572b3e030f9
   ALLURE_LAUNCH_TAGS: "reopened"
-  ALLURE_LAUNCH_ID: 7098
+  ALLURE_LAUNCH_ID: 7087
 
 jobs:
   all-tests:
@@ -46,7 +46,7 @@ jobs:
       - name: Run pytest tests
         run: |
           chmod +x exec-tests.sh
-          allurectl launch reopen 7098 watch -- pytest ./tests --alluredir=${ALLURE_RESULTS} --capture=no
+          allurectl launch reopen 7087 watch -- pytest ./tests --alluredir=${ALLURE_RESULTS} --capture=no
         env:
           TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
           TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
