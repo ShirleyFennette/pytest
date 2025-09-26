@@ -21,7 +21,6 @@ env:
   ALLURE_ENDPOINT: https://testing.qatools.cloud/
   ALLURE_PROJECT_ID: 1605
   ALLURE_TOKEN: 67aad6fa-966a-49ef-a598-e572b3e030f9
-  ALLURE_LAUNCH_TAGS: "reopened"
   ALLURE_LAUNCH_ID: 7087
 
 jobs:
@@ -42,7 +41,6 @@ jobs:
           allure-endpoint: ${{ secrets.ALLURE_ENDPOINT }}
           allure-token: ${{ secrets.ALLURE_TOKEN }}
           allure-project-id: ${{ secrets.ALLURE_PROJECT_ID }}
-          allure-launch-tags: ${{ secrets.ALLURE_LAUNCH_TAGS }}
       - name: Run pytest tests
         run: |
           chmod +x exec-tests.sh
