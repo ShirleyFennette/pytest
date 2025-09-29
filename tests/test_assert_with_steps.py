@@ -1,7 +1,6 @@
 import allure
 import pytest
 
-@allure.id("71364")
 @pytest.mark.example
 @allure.feature("src/v3/abirvalg")
 @allure.tag("Привет")
@@ -10,7 +9,6 @@ import pytest
 @allure.title("Do stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammitDo stuff and then assert dammit")
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
 @allure.label("jira","AK-1")
-@allure.testcase("60069")
 def test_json_attach():
     with allure.step("define st1ff"):
         pass
@@ -19,6 +17,10 @@ def test_json_attach():
     with allure.step("defile them"):
         pass
     with allure.step("define them"):
+        pass
+    with allure.step("do stuff"):
+        pass
+    with allure.step("do more stuff"):
         pass
     with allure.step("do stuff"):
         pass
