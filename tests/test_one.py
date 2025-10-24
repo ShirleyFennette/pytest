@@ -1,5 +1,6 @@
 import allure
 
+@allure.id("60972")
 @allure.suite("First steps")
 @allure.story("smoking pytest")
 @allure.feature("various assertions")
