@@ -50,6 +50,7 @@ jobs:
           TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
           ALLURE_TESTPLAN_PATH: "./testplan.json"
           ALLURE_RESULTS: "allure-results"
+          ALLURE_LAUNCH_TAGS: ${{ ALLURE_LAUNCH_TAGS }}
           
 
       
