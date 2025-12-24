@@ -31,4 +31,4 @@ def test_json_attach():
     with allure.step("expected result 2 < 3"):
         pass
         with allure.step("<b>asserting</b> 2 < 3"):
-            assert(2 > 3)
+            assert(2 < 3)
