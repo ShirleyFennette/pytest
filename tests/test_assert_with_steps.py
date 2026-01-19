@@ -2,7 +2,7 @@ import allure
 import pytest
 
 @pytest.mark.example
-@allure.id("106420")
+@allure.id("105754")
 @allure.feature("src/v3/abirvalg")
 @allure.tag("Привет")
 @allure.story("Answering questionable questions")
