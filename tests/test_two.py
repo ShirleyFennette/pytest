@@ -8,7 +8,7 @@ def test_failing():
     with allure.step("Assert tuple 1,2,3 versus tuple 1,2,3"):
         assert (1, 2, 3) == (1, 2, 3)
 
-@allure.id("114346"
+@allure.id("114346")
 @allure.suite("Second steps")
 @allure.story("smoking pytest and assertions with allure report")
 @allure.feature("tuple assertion")
