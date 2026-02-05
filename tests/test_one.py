@@ -4,6 +4,7 @@ import allure
 @allure.suite("First steps")
 @allure.story("smoking pytest")
 @allure.feature("various assertions")
+@allure.test("wtf?")
 @allure.title("<b>Assert</b> a tuple")
 def test_passing():
     with allure.step("Assert 123 versus 123"):
