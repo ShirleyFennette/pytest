@@ -14,5 +14,5 @@ def test_passing():
 @allure.feature("strings assertions")
 @allure.title("Assert two identical strings")
 def test_almost_same_assertion():
-    with allure.step("Assert tra-tata vs. tra-tata"):
+    with allure.step("Assert tra-tata vs. tra-tataaaaaaa"):
         assert "tra-tata" == "tra-tata"
