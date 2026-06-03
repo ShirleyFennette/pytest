@@ -23,6 +23,9 @@ env:
   ALLURE_TOKEN: 67aad6fa-966a-49ef-a598-e572b3e030f9
   ALLURE_LAUNCH_TAGS: "smoke"
 
+variables:
+  THAT_WAS_CLOSE: what?
+
 jobs:
   all-tests:
     runs-on: ubuntu-latest
