@@ -11,6 +11,7 @@ import pytest
 @allure.issue("http://116.203.103.50:8080/projects/AL/issues/AL-5")
 @allure.label("jira","AK-1")
 @allure.testcase("TMS-456")
+@allure.link("https://aa.com", name="Документация")
 def test_json_attach():
     with allure.step("define st1ff"):
         pass
